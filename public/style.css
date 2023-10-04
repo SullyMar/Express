@@ -1,0 +1,36 @@
+/* Sulaiman Mardanyar - 301270644
+COMP229 Section 003 Assignment 1
+my CSS file changing a few components around
+Date: Oct 4th 2023*/
+
+/*Edit the bootstrap css panel to add space between the panel and the navbar*/
+.card{
+    margin-top: 25px;
+    text-align: center;
+    font-size: large;
+} 
+/*Changing color of submit button on contact page form*/
+.btn-info.btn-block {
+    background-color: black;
+    color:white;
+}
+/*centered text*/
+.jumbotron{
+    text-align: center;
+}
+
+/*attempt to introduce a scroll bar if content exceeds window*/
+body{
+    overflow-y: scroll;
+    margin-bottom: 100px;
+}
+
+/*aligning text on navbar*/
+.navbar-bottom{
+    text-align: center;
+}
+/*changing the text styling for the accordian that can be found on the projects and services page*/
+.accordian-body-text{
+    font-size: medium;
+    font-weight: 400;
+}

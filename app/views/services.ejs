@@ -1,0 +1,60 @@
+<!-- Sulaiman Mardanyar - 301270644
+COMP229 Section 003 Assignment 1
+Date: Oct 4th 2023-->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %> <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to <%= title %> page </h1>
+      <div class="card">
+        <div class="card-body">
+          <p>For rates please fill out the form in the <a href="/contact">Contacts page</a> with services you would like to inquire</p>
+        </div>
+        <!-- Below is a accordian from MDBootstrap, allows for multiple panesl with collapsable bodies-->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Web Design Intro
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="accordian-body-text">Tutoring sessions that teach HTML, CSS, and web design etiquette.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Discrete Maths
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="accordian-body-text">
+                  Discrete math 1 & 2 lessons.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Introduction to progamming
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="accordian-body-text">
+                  Introduction to .Net framework and progamming with C#.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--bottom nav-->
+  <!--script section--><%- include ('partials/bottom_nav.ejs') %>
+  <%- include ('partials/footer.ejs') %>

@@ -1,0 +1,48 @@
+<!-- Sulaiman Mardanyar - 301270644
+COMP229 Section 003 Assignment 1
+Date: Oct 4th 2023-->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %> 
+<main class="container">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="jumbotron">
+      <div class="card">
+        <div class="card-body">
+          <p>Please email me at <a href=mailto:smardan1@my.centennialcollege.ca>smardan1@my.centennialcollege.ca</a><br>
+          Or you can fill out the following form</p>
+        </div>
+      </div>
+      <!-- Default form contact -->
+<form class="text-center border border-light p-5" action="mailto:smardan1@my.centennialcollege.ca" method="post">
+
+  <p class="h4 mb-4">Contact Me</p>
+
+  <!-- Name -->
+  <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+  <!-- Contact Number-->
+  <input type="text" id="defaultContactFormNumber" class="form-control mb-4" placeholder="Phone Number">
+
+  <!-- Email -->
+  <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Message -->
+  <div class="form-group">
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+  </div>
+
+  <!-- Copy -->
+  <div class="custom-control custom-checkbox mb-4">
+      <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+      <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+  </div>
+
+  <!-- Send button -->
+  <button class="btn btn-info btn-block" type="submit">Send</button>
+
+</form>
+<!-- Default form contact -->
+    </div>
+  </main>
+  <!--bottom nav-->
+  <!--script section--><%- include ('partials/bottom_nav.ejs') %><%- include ('partials/footer.ejs') %>

@@ -1,0 +1,18 @@
+<!-- Sulaiman Mardanyar - 301270644
+COMP229 Section 003 Assignment 1
+Date: Oct 4th 2023-->
+
+<!--Simple about page, nothing extra added.-->
+<%- include ('partials/header.ejs') %><%- include ('partials/main_nav.ejs') %> <main class="container">
+<link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to <%= title %> page </h1>
+      <br><h1>About Me</h1>
+      <img src="/img/headshot.jpg" id="headshot" alt="logo" style: width="150px" height="150px">
+      <p> I am Sulaiman Mardanyar, a second year student at Centennial College currently enrolled in the Software Engineering Technology program held at Progress campus.</p>
+      <p>Some of my hobbies are producing music, playing volleyball, and jogging.</p>
+      <p><a href="/pdf/SM.pdf">Click Here</a> to view my resume.</p>
+    </div>
+  </main>
+  <!--bottom nav-->
+  <!--script section--><%- include ('partials/bottom_nav.ejs') %><%- include ('partials/footer.ejs') %>

@@ -1,0 +1,25 @@
+<!-- Sulaiman Mardanyar - 301270644
+COMP229 Section 003 Assignment 1
+Date: Oct 4th 2023-->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %> 
+<main class="container">
+   <div class="jumbotron">
+     <h1 class="display-4">Welcome to <%= title %> page </h1>
+     <p> Hello! Welcome to my First Express Website.</p>
+     <p>If you would like to get to know more about me head to the <a href="/about" class="clickLink">About</a> page.</p>
+     <p>To get in contact please head to the <a href="/contact" class="clickLink">Contact</a> page.</p>
+     <p></p>
+     <p>To view my recent projects and contributions, visit the <a href="/projects" class="clickLink">Projects</a> page.</p>
+     <p>Information on services provided can be found on the <a href="/services" class="clickLink">Services</a> page.<br></p>
+     <!--A simple panel acquired from bootstrap website -->
+     <div class="card">
+        <div class="card-header">Mission Statement</div>
+          <div class="card-body">
+            <p>As a software engineering student i aim to learn modern web development techniques</p>
+          </div>
+    </div>
+     </div>
+ </main>
+ <!--bottom nav-->
+ <!--script section--><%- include ('partials/bottom_nav.ejs') %><%- include ('partials/footer.ejs') %>
